@@ -19,4 +19,14 @@ class ParkingFloor{
         return null;
     }
 
+    isFull(){
+        return this.spots.every(spot => spot.isOccupied);
+    }
+
+    getFloorName(){
+        return this.floorName;
+    }
+
 }
+
+module.export = ParkingFloor;
